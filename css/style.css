@@ -1,184 +1,177 @@
-body {
-    background-color: green;
-}
-
 /* HEADER */
-
 .titulos {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
 }
 
 .subtitulo {
- font-style: italic;
- text-decoration: underline
+  font-style: italic;
+  text-decoration: underline;
 }
 
-
-
-
 /* MAIN */
-
 .main {
-    display: flex;
-    align-content: space-between;
-    justify-content: left;
-    flex-direction: column;
-    
+  display: flex;
+  align-content: space-between;
+  justify-content: left;
+  flex-direction: column;
 }
 
 .section1 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
 }
 
 .imagen1 {
-    width: 650px;
-    margin-left: 10px;
+  width: 650px;
+  margin-left: 10px;
 }
 
 .section2 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
 }
 
 .imagen2 {
-    width: 550px;
-    margin-left: 10px;
+  width: 550px;
+  margin-left: 10px;
 }
 
 /* FOOTER */
-
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-/* PARTIDOS */
-
-.titulo3 {
-    text-align: center;
-    color: white;
-
-}
-
-
-.div {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: left;
-    color: white;
-    text-align: center;
-}
-
-.escudo {
-    width: 30px;
-}
-
-.escudo1 {
-    width: 60px;
-}
-
-.derechos {
-    text-align: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 /* FORO */
-
 .contenedor-foro {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 500px 500px auto 100px;
-    grid-template-areas:
-    "comentarios info formulario"
-    "comentarios footer footer";
-    background-color: greenyellow;
-   
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "comentarios info formulario" "comentarios footer footer";
+  background-color: greenyellow;
 }
 
 .comentarios {
-    grid-area: comentarios;
-    background-color: greenyellow;
-    color: black;
-    text-align: center;
+  grid-area: comentarios;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
 }
 
 .info {
-    grid-area: info;
-    display: inline-block;
-    background-color: greenyellow;
-    color: black;
-    text-align: center;
-
-      column-count: 1;        
-      font-size: 18px;
-      max-width: 800px;
-      margin: auto;
-      margin-top: 1px;
+  grid-area: info;
+  display: inline-block;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  column-count: 1;
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 1px;
 }
 
 .form {
-    grid-area: formulario;
-    background-color: greenyellow;
-    color: black;
-    text-align: center;
+  grid-area: formulario;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
 }
 
 .pie {
-    grid-area: footer;
-    background-color: greenyellow;
-    margin-top: 450px;
-    margin-left: 450px;
-   
+  grid-area: footer;
+  background-color: greenyellow;
+  margin-top: 450px;
+  margin-left: 450px;
 }
 
 .imagen3 {
-    width: 300px;
-    align-items: center;
-    margin-bottom: 400px;
-    background-color: greenyellow;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  margin-bottom: 400px;
+  background-color: greenyellow;
+  animation: aparecer 6s ease-in-out infinite;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .log-in {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 15px;
 }
 
 button {
-    width: 100px;
-    margin-top: 15px;
+  width: 100px;
+  margin-top: 15px;
+}
+
+/* PARTIDOS */
+.titulo3 {
+  text-align: center;
+  color: white;
+}
+
+.div {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+  color: white;
+  text-align: center;
+}
+
+.escudo {
+  width: 30px;
+}
+
+.escudo1 {
+  width: 60px;
+}
+
+.derechos {
+  text-align: center;
+  color: white;
 }
 
 /* REGISTRO */
-
 .register {
-    display: flex;
-    justify-content: center;
-    margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
 }
 
 /* CONTACTO */
-
 .titulo4 {
-    text-decoration: underline;
-    color: white;
+  text-decoration: underline;
+  color: white;
 }
 
 .main-contacto {
-    color: white;
-    font-size: xx-large;
+  color: white;
+  font-size: xx-large;
 }
 
 .footer2 {
-    text-align: right;
-    margin-top: 350px;
-    font-size: large;
-    color: white;
+  text-align: right;
+  margin-top: 350px;
+  font-size: large;
+  color: white;
 }
+
+body {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

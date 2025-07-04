@@ -1,0 +1,76 @@
+/* FORO */
+
+.contenedor-foro {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "comentarios info formulario"
+    "comentarios footer footer";
+  background-color: greenyellow;
+}
+
+.comentarios {
+  grid-area: comentarios;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+}
+
+.info {
+  grid-area: info;
+  display: inline-block;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+
+  column-count: 1;
+  font-size: 18px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 1px;
+}
+
+.form {
+  grid-area: formulario;
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+}
+
+.pie {
+  grid-area: footer;
+  background-color: greenyellow;
+  margin-top: 450px;
+  margin-left: 450px;
+}
+
+.imagen3 {
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  margin-bottom: 400px;
+  background-color: greenyellow;
+  animation: aparecer 6s ease-in-out infinite;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.log-in {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+button {
+  width: 100px;
+  margin-top: 15px;
+}
