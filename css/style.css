@@ -10,6 +10,11 @@
   text-decoration: underline;
 }
 
+.nav-link {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+}
+
 /* MAIN */
 .main {
   display: flex;
@@ -48,6 +53,7 @@
 }
 
 /* FORO */
+
 .contenedor-foro {
   display: grid;
   grid-template-columns: auto;
@@ -86,8 +92,6 @@
 .pie {
   grid-area: footer;
   background-color: greenyellow;
-  margin-top: 450px;
-  margin-left: 450px;
 }
 
 .imagen3 {
@@ -133,11 +137,11 @@ button {
 }
 
 .escudo {
-  width: 30px;
+  width: 50px;
 }
 
 .escudo1 {
-  width: 60px;
+  width: 100px;
 }
 
 .derechos {
@@ -163,9 +167,13 @@ button {
   font-size: xx-large;
 }
 
+.mesaje-contacto {
+  margin-left: 1400px;
+}
+
 .footer2 {
   text-align: right;
-  margin-top: 350px;
+  margin-top: 10px;
   font-size: large;
   color: white;
 }
